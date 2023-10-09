@@ -1,0 +1,19 @@
+class Solution {
+    public int fib(int n) {
+        if(n<=1){
+            return n;
+        }
+        int curr=0;
+        int next=1;
+        int fibonacci=0;
+        for(int i=2;i<=n;i++)
+        {
+            fibonacci=curr+next;
+            curr=next;
+            next=fibonacci;
+        }
+        return fibonacci;
+        
+            
+    }
+}
